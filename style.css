@@ -1,21 +1,28 @@
 body{
     font-family: Verdana, sans-serif;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    position:relative;
+    height: 400px;
     width: 100%;
-    background: linear-gradient(-45deg, rgb(78, 1, 1),rgb(90, 1, 1),rgb(38, 0, 87),rgb(28, 28, 218));
-    background-size: 400% 400%;
-    animation: transition-main 8s ease-in-out infinite;
 }
 .wrapper-main{
+    height: 500px;
+    padding: 2px;
     width: 100%;
-    padding: 0;
-    margin: 0;
-    height: 100px;
+    background: linear-gradient(-45deg, rgb(155, 33, 33),rgb(114, 46, 36),rgb(188, 70, 70),rgb(78, 1, 1));
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: transition-main 8s ease-in-out infinite;
+    position:relative;
+    left:0;
+    
 }
 .wrapper-main .wrapper{
-    padding: 0;
-    margin: 0;
+    
     box-sizing: 50px 50px;
     top:15px;
 }
@@ -26,7 +33,7 @@ body{
     top:15px;
 }
 .wrapper-main .checkbox{
-    background-color: rgb(1, 166, 172);
+    background-color: rgb(76, 141, 193);
     width: 50px;
     height: 50px;
     border-radius: 5px;
@@ -77,18 +84,7 @@ body{
    transform: rotate(-45deg);
    top: 20px;
   }
-.wrapper-main{
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(-45deg, rgb(95, 109, 187),rgb(60, 114, 168),rgb(70, 108, 188),rgb(32, 57, 159));
-    background-size: 400% 400%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation: transition-main 8s ease-in-out infinite;
 
-}
 .wrapper-main h1{
     text-transform: uppercase;
     font-family: 'Times New Roman', Times, serif;
@@ -213,206 +209,184 @@ body{
  z-index:1;
 
 }
-
 .card-sobre{
     margin: 0;
-    padding: 0;
-    border: 0;
     width:100%;
-    height:200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height:300px;
     position: relative;
+    bottom: 21px;
     background-color: rgb(76, 141, 193);
 }
-.card-sobre h2{
-    position:absolute;
-    top:0;
-
-}
 .card-sobre p{
-    position:absolute;
-    margin:auto;
-    top:60px;
-    left: 5px;
-    right: 5px;
+    padding: 1%;
+    display: flex;   
+    position: relative;
     align-items: center;
     text-align: justify;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    letter-spacing: 3px;
 }
-.container-main{
-    height: 150px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin:3rem 0;
-   
-   
-}
-.container-linkedin{
-    justify-content: right;
+.card-sobre h2{
+    padding: 3%;
     align-items: center;
-    width: 46%;
-    position: relative;
-    top: -90px;
+    text-align: center;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
 
-}
-.container-github{
-    position: relative;
-    left:50%;
-    top: -400px;
-    justify-content:left;
+
+.container-main{
+    width: 100%;
+    height: 450px;
+    max-width: 2000px;
+    background-color: rgb(76, 141, 193);
+    justify-content: space-between; 
     align-items: center;
-    width: 46%;
+    position: relative;
+    bottom: 25px;
+    padding-bottom:36px;   
+    
+
+} 
+.img-linkedin{
+    width: 150px;
+    height: 200px;
+    border-radius: 100%;  
+}
+.img-linkedin:hover{
+    filter:unset;
+    cursor:pointer;
 }
 .card-linkedin{
-    border-radius: 5px;
-    position: relative;
-    left: 50px;
-    width: 300px;
-    height:200px;
-    margin: 3rem 0 0 0;
-    display: flex;
-    background-image: url("linkedin.png");
-    image-rendering: auto;
     align-items: center;
-    justify-content: center;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter:grayscale(0.5);
-    color:black;
+    text-align: center;
+    height: 200px;
+    width: 150px;
     cursor:pointer;
     transition:.5s ease-in-out; 
+    position: absolute;
+    right:30%;
+    top:0;
+    border-radius: 50%;;
+    filter:grayscale(0.5);
 }
-.card-linkedin:hover{
-    filter: unset;
-}
-
 .card-wrapper-linkedin{
-    width: 40%;
     letter-spacing: 1px;
     text-align: center;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
-}
-.card-wrapper-linkedin::before{
-    content:"";
-    position:absolute;
-    height: 100px;
-    width: 100px;
-    display: block;
-    border: 1px solid white;
-    opacity: 0;
+    border-radius: 50%;
     transition: .5s ease-in-out;
+    position:absolute;
+    top:0;
+    height: 200px;
+    width: 150px; 
 }
 .card-wrapper-linkedin h2{
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin:0;
-    transition: .5s ease-in-out;
-    background-color: blueviolet;
+    text-align: center;
+    color:white;
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+    top:25%;
+    left: 10%;
+    
 }
-
 .card-wrapper-linkedin p{
     font-size: 0;
-    visibility: visible;
-    opacity: 0;
     font-weight: bold;
-    text-transform: uppercase;
-    transition: .5s ease-in-out;
-    
+    text-transform: uppercase;  
+    opacity: 0;
+   position: absolute;
+    top: 40%;
+    color: white;
 
 }
-.card-linkedin:hover > .card-wrapper-linkedin::before{
+.card-linkedin:hover > .card-wrapper-linkedin > p{
+    opacity: 1;
+    content: '';
+    font-size: 10px;
     height: 200px;
-    width: 300px;
-    opacity: 1;
-    border-radius: 5px;
-}
-.card-linkedin:hover > .card-wrapper-linkedin p{
-    opacity: 1;
-    visibility: visible;
-    font-size:15px;
-    background-color: blueviolet;
+    width: 150px;
+    transition: .9s ease-in-out;
+    position: absolute;
+    right: 0;
     
 } 
+
+.card-wrapper-linkedin:hover > .card-linkedin{
+    opacity: 1;
+    visibility: visible;
+    font-size:20px;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    width: 160px;
+    height: 160px;
+}  
+
 .card-github{
-    position: relative;
-    left: 50px;
-    width: 300px;
-    height:300px;
-    margin: 3rem 0 0 0;
-    display: flex;
-    background-image: url(github-Isadora.png);
-    align-items: center;
-    justify-content:center;
-    background-position:center; 
-    background-size: cover;
-    background-repeat: no-repeat;
     filter:grayscale(0.5);
     color:white;
     cursor:pointer;
-    transition:.5s ease-in-out;
-    border-radius: 5px;
-  
+    position: absolute;
+    left: 20%;
+    width: 150px;
+    height: 200px; 
+    border-radius: 100% ;
+    top:0;
 }
-.card-github:hover{
-    filter: unset;
-}
-.card-github:hover > .card-wrapper-github::before{
-    height: 300px;
-    width: 300px;
-    opacity: 1;
-    border-radius: 5px;
-}
-.card-github:hover > .card-wrapper-github p{
-    opacity: 1;
-    visibility: visible;
-    font-size:10px;
-    
+
+.img-github{
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    border-radius: 100%;
+    align-items: center;
+    left: 20%;
+    top:0;
 } 
 .card-wrapper-github{
-    width: 40%;
-    letter-spacing: 1px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     
-}
-.card-wrapper-github::before{
-    content:"";
-    position:absolute;
-    height: 100px;
-    width: 100px;
-    display: block;
-    border: 1px solid white;
-    opacity: 0;
-    transition: .5s ease-in-out;
-}
+    letter-spacing: 1px;
+    position: absolute;
+    top:25%;  
+    left:20%;
+} 
 .card-wrapper-github h2{
-    font-size: 40px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin:0;
-    transition: .5s ease-in-out;
-}
+   
+} 
 
 .card-wrapper-github p{
     font-size: 0;
-    visibility: visible;
+    text-align: center;
     opacity: 0;
     font-weight: bold;
     text-transform: uppercase;
+    
+    
+} 
+.card-github:hover{
+    filter: unset;
+} 
+ 
+ .card-github:hover > .card-wrapper-github p{
+    opacity: 1;
+    font-size:8px;
     transition: .5s ease-in-out;
-
-}
-
+    position:absolute;
+    left: 50%;
+}  
+ 
 
 
 .chat{
@@ -431,7 +405,10 @@ body{
     bottom: 10px;
     transform: translateY(0);
     align-items: center;
- animation: chat-shaking 2s ease-in-out infinite;
+    animation: chat-shaking 2s ease-in-out infinite;
+    margin:0;
+   
+
 }
 .chat::before{
     content: "";
@@ -491,63 +468,34 @@ body{
         transform:translateY(0);
     }
 }
+.alinhar-chat{
+    position: absolute;
+    width: 100%;
+ 
+}
 .footer{
-    padding: 10px;
-    background-color: rgb(83, 0, 0);
+    padding: 25px;
+    background-color: rgb(187, 89, 23);
     text-align: center;
     color: white;
     font-family: sans-serif;
-    position:fixed;
+    font-size: 20px;
+    position: static;
+    right: 0;
     bottom: 0;
-    margin: auto;
-    width: 100%;
+    margin: 0;
+    
 }
 @media(max-width:800px){
     .social-media{
         display: flex;
       
     }    
-} .container-main{
-    width: 100%;
-    height: 40px;
-    margin-top:0;
-    padding: 0;
-    text-align: center;
-    align-items: center;
-}
-.card-github{
-    position:absolute;
-    top:700px;
-    left: -250px;
-}
-.card-linkedin{
-    position:absolute;
-    top:100px;
-    left: -100px;
-}
-.wrapper-main{
-    width: auto;
- 
 }
 .chat{
     position: relative;
-    top:500px;
-}
-.card-linkedin{
-    height: 250px;
-    width: 250px;
+   
 }
 
-.card-linkedin:hover > .card-wrapper-linkedin::before{
-   height: 198px;
-   width: 190px;
-}
-.card-github{
-    height: 250px;
-    width: 250px;
-}
 
-.card-github:hover > .card-wrapper-github::before{
-   height: 198px;
-   width: 190px;
-}
+
